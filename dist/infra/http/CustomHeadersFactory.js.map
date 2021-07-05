@@ -1,0 +1,1 @@
+{"version":3,"file":"CustomHeadersFactory.js","sourceRoot":"","sources":["../../../src/infra/http/CustomHeadersFactory.ts"],"names":[],"mappings":"AAAA,MAAM,CAAC,MAAM,eAAe,GAAG,CAAC,MAAc,EAAE,EAAE,CAAC,CAAC;IAClD,WAAW,EAAE,MAAM;CACpB,CAAC,CAAC;AAEH,MAAM,CAAC,MAAM,eAAe,GAAG,CAAC,KAAa,EAAE,EAAE,CAAC,CAAC;IACjD,aAAa,EAAE,KAAK;IACpB,cAAc,EAAE,kBAAkB;CACnC,CAAC,CAAC"}

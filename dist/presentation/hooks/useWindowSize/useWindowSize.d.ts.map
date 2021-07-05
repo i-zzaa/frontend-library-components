@@ -1,0 +1,1 @@
+{"version":3,"file":"useWindowSize.d.ts","sourceRoot":"","sources":["../../../../src/presentation/hooks/useWindowSize/useWindowSize.ts"],"names":[],"mappings":"AAEA,aAAK,UAAU,GAAG;IAChB,KAAK,EAAE,MAAM,CAAC;IACd,MAAM,EAAE,MAAM,CAAC;CAChB,CAAC;AAEF,iBAAS,aAAa,IAAI,UAAU,CAoBnC;AAED,eAAe,aAAa,CAAC"}

@@ -1,0 +1,18 @@
+#packages
+node_modules
+
+# project src directory
+src
+
+# ts configs
+tsconfig.json
+tsconfig.paths.json
+
+#pipelines
+.github
+
+# tests
+__tests__
+
+# logs
+yarn-error.log

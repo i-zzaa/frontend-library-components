@@ -1,0 +1,1 @@
+{"version":3,"file":"AxiosLanguageInterceptor.d.ts","sourceRoot":"","sources":["../../../src/infra/http/AxiosLanguageInterceptor.ts"],"names":[],"mappings":"AACA,OAAO,EAAE,kBAAkB,EAAE,MAAM,OAAO,CAAC;AAE3C,wBAA8B,wBAAwB,CACpD,MAAM,EAAE,kBAAkB,GACzB,OAAO,CAAC,kBAAkB,CAAC,CAG7B"}

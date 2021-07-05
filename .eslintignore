@@ -1,0 +1,18 @@
+mock-server/*
+
+# packages
+node_modules/*
+
+# ts configs
+tsconfig.json
+tsconfig.paths.json
+
+# md files
+*.md 
+
+# json files
+*.json
+
+# images
+*.svg
+*.png

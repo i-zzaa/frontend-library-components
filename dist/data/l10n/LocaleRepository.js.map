@@ -1,0 +1,1 @@
+{"version":3,"file":"LocaleRepository.js","sourceRoot":"","sources":["../../../src/data/l10n/LocaleRepository.ts"],"names":[],"mappings":"AAAA,MAAM,iBAAiB,GAAG,YAAY,CAAC;AAEvC,SAAS,GAAG;IACV,OAAO,YAAY,CAAC,OAAO,CAAC,iBAAiB,CAAC,CAAC;AACjD,CAAC;AAED,SAAS,GAAG,CAAC,MAAc;IACzB,YAAY,CAAC,OAAO,CAAC,iBAAiB,EAAE,MAAM,CAAC,CAAC;AAClD,CAAC;AAED,eAAe,EAAE,GAAG,EAAE,GAAG,EAAE,CAAC"}
