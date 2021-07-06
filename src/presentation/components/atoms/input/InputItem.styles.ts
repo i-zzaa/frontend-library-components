@@ -1,7 +1,7 @@
 import {
   CentredLeftColumnLayout,
   CentredRowLayout,
-} from '@/presentation/components/layouts';
+} from '@/presentation/components/templates/layouts';
 import { Colors } from '@/presentation/styles/colors.enum';
 import styled from 'styled-components';
 

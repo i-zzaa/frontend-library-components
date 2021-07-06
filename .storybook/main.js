@@ -3,13 +3,14 @@ const webpack = require('webpack');
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 
 module.exports = {
-  mode: 'production',
-  entry: './src/index.ts',
+  mode: 'development',
+  entry: '../src/index.ts',
   module: {
     rules: [
       {
         test: /\.(ts|js)x?$/,
         exclude: /node_modules/,
+        include: ['../stories', '../src'],
         use: [{
           loader: 'babel-loader',
           options: {
@@ -33,18 +34,14 @@ module.exports = {
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
     alias: {
-      '@': path.join(__dirname, 'src'),
+      '@': path.join(__dirname, '../src'),
     },
-  },
-  output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'index.js',
   },
   plugins: [
     new ForkTsCheckerWebpackPlugin({
       async: false,
       eslint: {
-        files: './src/**/*',
+        files: ['../src/**/*', '../stories/**/*'],
       },
     }),
   ],

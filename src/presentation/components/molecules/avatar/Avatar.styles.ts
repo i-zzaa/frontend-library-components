@@ -1,6 +1,6 @@
 import { StyledSizeProps } from '@/presentation/styles/global.types';
 import styled from 'styled-components';
-import { CentredColumnLayout } from '../layouts';
+import { CentredColumnLayout } from '../../templates/layouts';
 
 export const StyledAvatarContainer = styled(CentredColumnLayout)`
   border: 2px solid gray;

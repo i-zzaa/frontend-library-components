@@ -1,12 +1,11 @@
 {
-  "name": "frontend-library-components",
-  "version": "1.0.0",
+  "name": "@eemovel/frontend-library-components",
+  "version": "0.0.2",
   "description": "EEMovel's front-end components' library",
   "main": "dist/index.js",
-  "repository": "https://github.com/eemovel",
   "author": "EEMovel",
   "license": "MIT",
-  "private": true,
+  "private": false,
   "engines": {
     "node": ">=14"
   },

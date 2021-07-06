@@ -1,7 +1,7 @@
 import { Colors } from '@/presentation/styles/colors.enum';
 import { StyledSizeProps } from '@/presentation/styles/global.types';
 import styled from 'styled-components';
-import { CentredColumnLayout } from '../layouts';
+import { CentredColumnLayout } from '../../templates/layouts';
 
 export const FormExternalContainer = styled(CentredColumnLayout)`
   width: 100%;

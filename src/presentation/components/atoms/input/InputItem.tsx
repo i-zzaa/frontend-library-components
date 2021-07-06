@@ -1,4 +1,4 @@
-import Text from '@/presentation/components/text/Text';
+import Text from '@/presentation/components/atoms/typography/Typography';
 import React, {
   FunctionComponent as FC,
   ReactElement as RE,

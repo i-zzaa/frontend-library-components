@@ -1,7 +1,7 @@
 import {
   CentredColumnLayout,
   CentredRowLayout,
-} from '@/presentation/components/layouts';
+} from '@/presentation/components/templates/layouts';
 import styled from 'styled-components';
 
 export const StyledInputContainer = styled(CentredRowLayout)`

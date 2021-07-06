@@ -18,11 +18,11 @@ interface Props {
   Span: FC<SubProps>;
 }
 
-const Text: Props = (): void | RE => {};
+const Typography: Props = (): void | RE => {};
 
-Text.Title = Title;
-Text.Subtitle = Subtitle;
-Text.Paragraph = Paragraph;
-Text.Span = Span;
+Typography.Title = Title;
+Typography.Subtitle = Subtitle;
+Typography.Paragraph = Paragraph;
+Typography.Span = Span;
 
-export default Text;
+export default Typography;
