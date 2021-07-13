@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.6.0",
+    "@storybook/addon-controls": "^6.3.4",
     "axios": "^0.21.1",
     "history": "4.10.1",
     "react": "^17.0.2",
