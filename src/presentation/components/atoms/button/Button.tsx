@@ -14,7 +14,7 @@ interface Props {
 
 const Button: FC<Props> = ({ label, type, onClick, styles, disabled, iconLeft, ...props }: Props): RE => {
   return (
-    <StyledButton type={type} onClick={onClick && onClick} style={styles} disabled={disabled} {...props}>
+    <StyledButton type={type} onClick={onClick} style={styles} disabled={disabled} {...props}>
       {iconLeft && <FontAwesomeIcon icon={iconLeft} />}
       {label}
     </StyledButton>
