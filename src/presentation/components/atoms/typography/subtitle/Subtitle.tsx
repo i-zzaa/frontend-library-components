@@ -1,10 +1,5 @@
-import { StyleRemapper } from '@/presentation/utils/style-remapper/StyleRemapper';
-import React, {
-  FunctionComponent as FC,
-  ReactElement as RE,
-  ReactNode,
-  useMemo,
-} from 'react';
+import React, { FunctionComponent as FC, ReactElement as RE, ReactNode, useMemo } from 'react';
+import { StyleRemapper } from '../../../../utils/style-remapper/StyleRemapper';
 import { StyledSubtitle } from './Subtitle.styles';
 
 export interface Props {
@@ -14,12 +9,7 @@ export interface Props {
   styles?: Record<string, string>;
 }
 
-const Subtitle: FC<Props> = ({
-  children,
-  styles = { '': '' },
-  beforeText,
-  afterText,
-}: Props): RE => {
+const Subtitle: FC<Props> = ({ children, styles = { '': '' }, beforeText, afterText }: Props): RE => {
   const updatedStyles = useMemo(() => StyleRemapper(styles), [styles]);
 
   return (

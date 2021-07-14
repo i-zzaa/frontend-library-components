@@ -1,9 +1,5 @@
-import Text from '@/presentation/components/atoms/typography/Typography';
-import React, {
-  FunctionComponent as FC,
-  ReactElement as RE,
-  useState,
-} from 'react';
+import React, { FunctionComponent as FC, ReactElement as RE, useState } from 'react';
+import Text from '../typography/Typography';
 
 import {
   spanValidator,
@@ -12,6 +8,8 @@ import {
   StyledLabel,
   lebelStyles as ls,
   StyledItemContainer,
+  StyledIcon,
+  StyledDisabledIcon,
 } from './InputItem.styles';
 import PasswordItemVisibility from './password-item-visibility/PassowordItemVisibility';
 
@@ -25,6 +23,8 @@ export interface Props {
   inputValue?: string | number;
   onChangeInput?(e: React.ChangeEvent<HTMLInputElement>): void;
   errors?: string;
+  iconLeft?: RE | null;
+  disabled?: boolean;
 }
 
 const FormItem: FC<Props> = ({
@@ -37,6 +37,9 @@ const FormItem: FC<Props> = ({
   inputValue,
   onChangeInput,
   errors,
+  iconLeft = null,
+  disabled = false,
+  ...props
 }: Props): RE => {
   const { Span } = Text;
   const [temporaryItemType, setTemporaryItemType] = useState(itemType);
@@ -46,7 +49,10 @@ const FormItem: FC<Props> = ({
       <StyledLabel>
         <Span styles={labelStyles}>{labelName}</Span>
       </StyledLabel>
-      <StyledInputContainer>
+      <StyledInputContainer {...props}>
+        {iconLeft && !disabled && <StyledIcon icon={iconLeft} />}
+        {iconLeft && disabled && <StyledDisabledIcon icon={iconLeft} />}
+
         <StyledInput
           id={inputID}
           type={temporaryItemType}
@@ -54,12 +60,11 @@ const FormItem: FC<Props> = ({
           placeholder={placeholder}
           value={inputValue}
           onChange={onChangeInput}
+          disabled={disabled}
+          {...props}
         />
         {itemType === 'password' && (
-          <PasswordItemVisibility
-            itemType={temporaryItemType}
-            setItemType={setTemporaryItemType}
-          />
+          <PasswordItemVisibility itemType={temporaryItemType} setItemType={setTemporaryItemType} />
         )}
       </StyledInputContainer>
       {errors && <Span styles={spanValidator}>{errors}</Span>}
