@@ -37,6 +37,7 @@ module.exports = {
       '@': path.join(__dirname, '../src'),
     },
   },
+  addons: ['@storybook/addon-controls'],
   plugins: [
     new ForkTsCheckerWebpackPlugin({
       async: false,
