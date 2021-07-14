@@ -26,7 +26,7 @@ export const StyledInputContainer = styled(CentredRowLayout)`
 
   border: 1px solid ${Colors.WHITESMOKE};
   border-radius: 3px;
-  color: ${Colors.BLACK};
+  color: ${Colors.RHINO};
   :disabled {
     opacity: 0.4;
     cursor: not-allowed !important;
