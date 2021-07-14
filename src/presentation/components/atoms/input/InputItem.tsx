@@ -37,8 +37,8 @@ const FormItem: FC<Props> = ({
   inputValue,
   onChangeInput,
   errors,
-  iconLeft = null,
-  disabled = false,
+  iconLeft,
+  disabled,
   ...props
 }: Props): RE => {
   const { Span } = Text;

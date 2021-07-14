@@ -9,6 +9,7 @@ export default {
   title: 'Atom/Input',
   component: InputItem,
   argTypes: {
+    onChangeInput: {action: 'change'},
     style: { borderColor: { control: 'color' }},
     iconLeft: {
       control: {
