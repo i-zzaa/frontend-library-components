@@ -1,34 +1,22 @@
 import React, { FunctionComponent as FC, ReactElement as RE } from 'react';
-import { StyledButton, StyledDisabledButton } from './Button.styles';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { StyledButton } from './Button.styles';
 import { ButtonType } from './Button.types';
 
 interface Props {
-  children?: string;
+  label?: string;
   type?: ButtonType;
   disabled?: boolean;
   styles?: Record<string, string>;
   onClick?(): void;
+  iconLeft?: RE | null;
 }
 
-const Button: FC<Props> = ({
-  children,
-  type,
-  onClick,
-  styles,
-  disabled,
-}: Props): RE => {
-  if (disabled) {
-    return (
-      <StyledDisabledButton style={styles} disabled={disabled}>
-        {children}
-      </StyledDisabledButton>
-    );
-  }
-
+const Button: FC<Props> = ({ label, type, onClick, styles, disabled, iconLeft, ...props }: Props): RE => {
   return (
-    // eslint-disable-next-line react/button-has-type
-    <StyledButton type={type} onClick={onClick} style={styles}>
-      {children}
+    <StyledButton type={type} onClick={onClick} style={styles} disabled={disabled} {...props}>
+      {iconLeft && <FontAwesomeIcon icon={iconLeft} />}
+      {label}
     </StyledButton>
   );
 };
