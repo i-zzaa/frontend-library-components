@@ -20,7 +20,7 @@ export default {
             Without: null,
             TrashIcon: faTrash,
             CheckIcon: faCheck,
-            Comment: faComments,
+            CommentIcon: faComments,
         },
       }
     }
