@@ -6,7 +6,7 @@ import Line from '../../src/presentation/components/atoms/charts/line/Line';
 import { faTrash, faCheck, faComments } from '@fortawesome/free-solid-svg-icons';
 
 export default {
-  title: 'Atom/Line',
+  title: 'Atom/Charts/Line',
   component: Line
 }
 

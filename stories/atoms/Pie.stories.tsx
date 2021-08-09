@@ -6,7 +6,7 @@ import Pie from '../../src/presentation/components/atoms/charts/pie/Pie';
 import { faTrash, faCheck, faComments } from '@fortawesome/free-solid-svg-icons';
 
 export default {
-  title: 'Atom/Pie',
+  title: 'Atom/Charts/Pie',
   component: Pie
 }
 

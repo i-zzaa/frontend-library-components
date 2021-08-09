@@ -8,25 +8,36 @@ import Pie from '../pie/Pie';
 
 interface Props {
   data?: any
-  label?: string;
-  options?: string[];
-  optionsState: string;
-  disabled?: boolean;
-  onClick?(): void;
-  styles?: Record<string, string>;
+  colors?: string[]
 }
 
-const SelectChart: FC<Props> = ({data, ...props }: Props): RE => {
+const SelectChart: FC<Props> = ({data, colors, ...args}: Props): RE => {
   return (
     <div>
-      <div>{}</div>
-      <select value={props.optionsState}>
-        <option value="L"><Line data={data}/></option>
-        <option value="B"><Bar data={data}/></option>
-        <option value="P"><Pie data={data}/></option>
-      </select>
+      {applyColors(data, colors)}
+      <div>
+        {renderOptions(args.control, data)}
+      </div>
     </div>
   );
 };
+
+const applyColors = (data: any, colors: any) => {
+  if (data == undefined) return data
+  colors.forEach((color: string, i: any) => {
+    data.datasets[i].backgroundColor = color
+  });
+}
+
+const renderOptions = (option: string, data: any) => {
+  switch (option) {
+    case 'line':
+      return <Line data={data}/>
+    case 'bar':
+      return <Bar data={data}/>
+    case 'pie':
+      return <Pie data={data}/>
+  }
+}
 
 export default SelectChart;

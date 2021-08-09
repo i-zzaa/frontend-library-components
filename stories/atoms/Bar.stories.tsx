@@ -6,7 +6,7 @@ import Bar from '../../src/presentation/components/atoms/charts/bar/Bar';
 import { faTrash, faCheck, faComments } from '@fortawesome/free-solid-svg-icons';
 
 export default {
-  title: 'Atom/Bar',
+  title: 'Atom/Charts/Bar',
   component: Bar
 }
 
