@@ -31,5 +31,6 @@ basic.args = {
   labelName: 'InputItem', 
   disabled: false,
   style: {borderColor: Colors.WATER, borderRadius: '3px'},
-  iconLeft: null
+  iconLeft: null,
+  inputValue: 'teste'
 };
